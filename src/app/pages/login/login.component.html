@@ -1,0 +1,16 @@
+<section class="container mt-3">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+        <div class="mb-3">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" formControlName="email" placeholder="introduce un email">
+        </div>
+
+        <div class="mb-3">
+            <label for="password">Password</label>
+            <input type="password" formControlName="password" placeholder="introduce un password">
+        </div>
+
+        <input class="btn btn-danger" type="submit" value="login">
+    </form>
+</section>

@@ -1,0 +1,15 @@
+<div class="card shadow p-2 text-center">
+    <h3 class="fs-5">{{empleadito.nombre}} {{empleadito.apellidos}}</h3>
+    <p>Email: {{empleadito.email}}</p>
+    <p>Teléfono: {{empleadito.telefono}}</p>
+    <button class="btn btn-danger" [routerLink]="['/empleados', empleadito._id]">Ver detalle</button>
+
+    <!-- Reaizar la ruta para el boton ver detalle, en ella debemos cargar ese unico empleado mediante la funcion getById -->
+
+    <!-- 
+        - Necesito un nuevo componente empleadoView.
+        - Necesito una nueva ruta "empleados/:idempleado".
+        - En empleadoView tengo que usar ActivatedRoute para capturar el Id del empleado y hacer una petición al servicio.
+        - Pintar los datos de un empleado.
+     -->
+</div>
